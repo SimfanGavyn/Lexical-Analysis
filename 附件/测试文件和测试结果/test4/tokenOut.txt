@@ -1,0 +1,54 @@
+THREAD COMPILATION: test4.txt  2019/5/11 3:25:5
+EOF
+
+Line 1:  |thread Thread1#
+   Sub 1:  |Reserved Word = thread
+   Sub 1:  -|IDENTIFIER ERROR = Thread1#
+
+Line 2:  |^features # $%^
+   Sub 2:  -|IDENTIFIER ERROR = ^features
+   Sub 2:  -|NO MATCHING ERROR = #
+   Sub 2:  -|NO MATCHING ERROR = $%^
+
+Line 3:  |	_APPosition_Input : in event data port Nav_Types::Position_GPS;
+   Sub 3:  -|IDENTIFIER ERROR = _APPosition_Input
+   Sub 3:  |Signal = :
+   Sub 3:  |Reserved Word = in
+   Sub 3:  |Reserved Word = event
+   Sub 3:  |Reserved Word = data
+   Sub 3:  |Reserved Word = port
+   Sub 3:  |Identifier, Name = Nav_Types
+   Sub 3:  |Signal = ::
+   Sub 3:  |Identifier, Name = Position_GPS
+   Sub 3:  |Signal = ;
+
+Line 4:  |flows
+   Sub 4:  |Reserved Word = flows
+
+Line 5:  |        1flow1: flow path signal -> result1;
+   Sub 5:  -|DECIMAL ERROR = 1flow1
+   Sub 5:  |Signal = :
+   Sub 5:  |Reserved Word = flow
+   Sub 5:  |Reserved Word = path
+   Sub 5:  |Identifier, Name = signal
+   Sub 5:  |Signal = ->
+   Sub 5:  |Identifier, Name = result1
+   Sub 5:  |Signal = ;
+
+Line 6:  |properties
+   Sub 6:  |Reserved Word = properties
+
+Line 7:  |	dispatch_protocol => access 50.0.31;
+   Sub 7:  |Identifier, Name = dispatch_protocol
+   Sub 7:  |Signal = =>
+   Sub 7:  |Reserved Word = access
+   Sub 7:  -|DECIMAL ERROR = 50.0.31
+   Sub 7:  |Signal = ;
+
+Line 8:  |end Thread1;
+   Sub 8:  |Reserved Word = end
+   Sub 8:  |Identifier, Name = Thread1
+   Sub 8:  |Signal = ;
+
+EOF
+DETECTED ERROR: 7 errors.
